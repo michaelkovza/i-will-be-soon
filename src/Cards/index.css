@@ -1,0 +1,37 @@
+@media print {
+  .cards {
+    display: none;
+  }
+}
+
+.cards__preview {
+  cursor: pointer;
+  display: inline-block;
+  will-change: transform;
+  transition: transform 0.1s linear, width 0.1s linear;
+}
+
+.cards__preview--current {
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+.cards__preview:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 992px) {
+  .cards__preview {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  .cards__preview--current {
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    width: 95%;
+    transform: none;
+    will-change: width;
+  }
+}

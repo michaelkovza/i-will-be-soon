@@ -1,0 +1,141 @@
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.preview--small {
+  position: relative;
+  border: 5px solid transparent;
+  width: 40%;
+  transition: width 0.1s linear;
+  will-change: width;
+  background-color: white;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  margin: 5px;
+}
+
+.preview--small .preview__phone-number {
+  top: 15px;
+  font-size: 24px;
+}
+
+.preview__phone-number {
+  font-family: "digital_display_tfbregular";
+  font-size: 44px;
+}
+
+.preview__phone-number {
+  border: none;
+  outline: none;
+  text-align: center;
+  background-color: transparent;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.preview__phone-number::placeholder {
+  color: #f0f0f0;
+}
+
+.preview__illustration {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.preview__cards {
+  white-space: nowrap;
+  overflow-x: auto;
+  padding: 20px 0 15px;
+}
+
+.preview__paragraph, .preview__save-button {
+  font-family: "bebas_neueregular";
+  font-size: 20px;
+}
+
+.preview__paragraph {
+  padding-bottom: 5px;
+}
+
+.preview__arrow {
+  animation: pulse 1s linear infinite;
+}
+
+.preview__save-button {
+  color: #fff;
+  background-color: #e31e24;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.1s linear;
+}
+
+.preview__save-button:disabled {
+  cursor: auto;
+  background-color: #f0f0f0;
+}
+
+.preview__cut-here--hidden {
+  width: 1100px;
+  height: 549px;
+}
+
+.preview__cut-here--hidden .preview__phone-number {
+  font-size: 145px;
+}
+
+@media print {
+  .preview__save-button {
+    display: none;
+  }
+
+  .preview__cut-here {
+    border-left: none;
+    border-right: none;
+    border-top: 2px dashed #f0f0f0;
+    border-bottom: 2px dashed #f0f0f0;
+  }
+
+  .preview__phone-number {
+    font-size: 145px;
+  }
+}
+
+@media (min-width: 992px) {
+  .preview__phone-number {
+    font-size: 145px;
+  }
+
+  .preview__cards {
+    display: none;
+  }
+
+  .preview__cut-here {
+    border: 2px dashed #f0f0f0;
+  }
+
+  .preview--small {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .preview--small .preview__phone-number {
+    font-size: 35px;
+  }
+
+  .preview__paragraph {
+    padding-bottom: 20px;
+  }
+}

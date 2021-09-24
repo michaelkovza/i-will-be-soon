@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'digital_display_tfbregular';
+    src: url('digital_display_tfb-webfont.woff2') format('woff2'),
+    url('digital_display_tfb-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'bebas_neueregular';
+    src: url('bebasneue-regular-webfont.woff2') format('woff2'),
+    url('bebasneue-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

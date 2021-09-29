@@ -1,15 +1,15 @@
 import React from "react";
 import classNames from "classnames";
-import IWillBeSoon1 from "../illustrations/1.png";
-import IWillBeSoon2 from "../illustrations/2.png";
-import IWillBeSoon3 from "../illustrations/3.png";
-import IWillBeSoon4 from "../illustrations/4.png";
-import IWillBeSoon5 from "../illustrations/5.png";
-import IWillBeSoon6 from "../illustrations/6.png";
-import IWillBeSoon7 from "../illustrations/7.png";
-import IWillBeSoon8 from "../illustrations/8.png";
-import IWillBeSoon9 from "../illustrations/9.png";
-import IWillBeSoon10 from "../illustrations/10.png";
+import IWillBeSoon1 from "../../illustrations/1.png";
+import IWillBeSoon2 from "../../illustrations/2.png";
+import IWillBeSoon3 from "../../illustrations/3.png";
+import IWillBeSoon4 from "../../illustrations/4.png";
+import IWillBeSoon5 from "../../illustrations/5.png";
+import IWillBeSoon6 from "../../illustrations/6.png";
+import IWillBeSoon7 from "../../illustrations/7.png";
+import IWillBeSoon8 from "../../illustrations/8.png";
+import IWillBeSoon9 from "../../illustrations/9.png";
+import IWillBeSoon10 from "../../illustrations/10.png";
 import Preview from "../Preview";
 import "./index.css";
 

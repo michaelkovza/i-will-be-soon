@@ -1,7 +1,7 @@
 import React, { ChangeEvent, useState } from "react";
-import Cards from "./Cards";
-import ColonTitle from "./Colontitle";
-import Preview from "./Preview";
+import Cards from "./components/Cards";
+import ColonTitle from "./components/Colontitle";
+import Preview from "./components/Preview";
 import IWillBeSoon1 from "./illustrations/1.png";
 import "./App.css";
 
@@ -36,7 +36,6 @@ const App = () => {
         phoneNumber={phoneNumber}
         onIllustrationChange={onIllustrationChange}
       />
-
     </div>
   );
 };
